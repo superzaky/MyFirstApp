@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
+    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +44,9 @@ public class MyActivity extends AppCompatActivity {
         // Do something in response to button
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        System.out.println("zaky");
+        startActivity(intent);
     }
 }
