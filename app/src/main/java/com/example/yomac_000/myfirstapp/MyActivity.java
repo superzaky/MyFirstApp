@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MyActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
+    public final static String EXTRA_MESSAGE = "com.example.yomac_000.myfirstappp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
